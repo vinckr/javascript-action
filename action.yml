@@ -1,13 +1,21 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'List Contributors'
+description: 'Create a list of all contributors to a github repository'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  repo_name:  # id of input
+    description: 'name of repo: user/repo_name'
     required: true
-    default: 'World'
-outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+    default: 'ory/kratos'
+  access_token: # id of input
+    description: 'Github Access Token'
+    required: true
+  path:
+    description: 'path to the contributor list markdown'
+    required: false
+    default: '/contributorlist.md'
+  commit_message:
+    description: 'commit message'
+    required: false
+    default: 'docs: update contributor list'
 runs:
   using: 'node12'
   main: 'index.js'
