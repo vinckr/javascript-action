@@ -14,7 +14,7 @@ try {
         console.log('starting getting data');
         const result = await request("GET /repos/:owner/:repo/contributors", {
             headers: {
-              authorization: "97dcf1e91e7c97a1800c41f512e3ceddf128dead",
+              authorization: "asd",
             },
             owner: "ory",
             repo: "kratos",
