@@ -1,3 +1,5 @@
+// this is WIP and can be ignored
+
 name: 'List Contributors'
 description: 'Create a list of all contributors to a github repository'
 inputs:
